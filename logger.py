@@ -1,9 +1,12 @@
+import os
+import json
+
 # Logger utility for lunhg/WebWhatsapp-Wrapper
 # Usage
 # logger = Logger(logdir=</logdir>)
 class Logger(object):
 
-  def __init__(self):
+  def __init__(self, **kwargs):
 
     # Wheres log
     self.logdir = kwargs.logdir
